@@ -6,7 +6,7 @@
 #    By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/15 13:59:10 by sle-huec          #+#    #+#              #
-#    Updated: 2022/11/15 14:31:34 by sle-huec         ###   ########.fr        #
+#    Updated: 2022/11/17 14:06:46 by sle-huec         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,19 +54,4 @@ grind: ${NAME}
 bin: re $(NAME)
 	./$(NAME)
 
-test: $(NAME)
-	./tester_working_display.sh
-
-badt: $(NAME) 
-	./tester_bad_input.sh
-
-badi: $(NAME)
-	./tester_bad_idx.sh
-
-maxt: $(NAME)
-	./tester_max_entries.sh
-
-db: re $(NAME)
-	lldb ./phonebook
-
-.PHONY: clean fclean re grind test
+.PHONY: clean fclean re grind bin
