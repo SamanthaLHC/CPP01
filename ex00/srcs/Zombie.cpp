@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 14:01:44 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/17 15:49:40 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/17 17:24:17 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 Zombie::Zombie()
 {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << BWHT << " ---- A ZOMBIE APPEARS ! ----" << RES << std::endl;
 	return;
 }
 
 Zombie::~Zombie()
 {
 
-	std::cout << "Destructor called" << std::endl;
+	std::cout << BWHT << this->_name << ", le zombie, is dead..." << RES << std::endl;
 	return;
 }
 
