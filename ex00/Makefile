@@ -6,7 +6,7 @@
 #    By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/15 13:59:10 by sle-huec          #+#    #+#              #
-#    Updated: 2022/11/17 14:06:46 by sle-huec         ###   ########.fr        #
+#    Updated: 2022/11/18 11:56:52 by sle-huec         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,8 @@ OBJ_PATH = ./objs/
 
 SRCS = $(addprefix $(SRCS_PATH), \
 		Zombie.cpp \
+		newZombie.cpp \
+		randomChump.cpp \
 		main.cpp)
 
 OBJS	= $(SRCS:$(SRCS_PATH)%.cpp=$(OBJ_PATH)%.o)
