@@ -6,14 +6,14 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 15:26:32 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/18 15:51:54 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 17:03:00 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 
-#ifndef ZOMBIE_H
-# define ZOMBIE_H
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 
 //Regular bold text
 #define BBLK "\e[1;30m"

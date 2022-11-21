@@ -6,14 +6,14 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 14:02:18 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/17 15:42:27 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 17:02:50 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 
-#ifndef ZOMBIE_H
-# define ZOMBIE_H
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 
 
 //Regular text
