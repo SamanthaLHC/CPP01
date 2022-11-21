@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:28 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 17:02:43 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 17:04:42 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Weapon
 public:
 
 	Weapon(std::string weapon_description);
-	~Weapon();
+	~Weapon(void);
 
 	const std::string& getType(void) const;
 	void setType(std::string other_weapon);

@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:35 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 17:00:53 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 17:22:50 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,16 @@ HumanB::~HumanB(void)
 	return;
 }
 
-std::string HumanB::setWeapon(Weapon inst_weapon)
+void HumanB::setWeapon(Weapon inst_weapon)
 {
 	this->_weapon_dup = &inst_weapon;
-	if (this->_weapon_dup == NULL)
-		return NULL;
-	return this->_weapon_dup->getType();
+	return;
 }
 
 void HumanB::attack(void)
 {
-	
-	std::cout << BGRN << this->_name << " attacks with their " << 
- 		 << RES << std::endl;
+	if (this->_weapon_dup == NULL)
+		std::cout << BRED << this->_name << " attacks with their FISTS " << RES << std::endl;
+	else
+		std::cout << BGRN << this->_name << " attacks with their " << this->_weapon_dup->getType() << RES << std::endl;
 }

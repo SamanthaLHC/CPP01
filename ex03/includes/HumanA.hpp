@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:20 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 17:02:31 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 17:04:37 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class HumanA
 public:
 
 	HumanA(std::string chara_name, Weapon& inst_weapon);
-	~HumanA();
+	~HumanA(void);
 
 	void attack(void);
 
