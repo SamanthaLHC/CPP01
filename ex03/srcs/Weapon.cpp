@@ -6,21 +6,13 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:43 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 14:01:58 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 14:22:00 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 #include "colors.h"
 
-// ublic:
-
-// 	~Weapon();
-
-// 	void setType(std::string other_weapon);
-	
-// private:
-// 	std::string _type;
 
 Weapon::Weapon(std::string weapon_description) : _type(weapon_description)
 {
@@ -36,11 +28,11 @@ Weapon::~Weapon(void)
 
 std::string& Weapon::getType(void) const
 {
-	
+	return this->_type;
 }
 
-void setType(std::string other_weapon)
+void Weapon::setType(std::string other_weapon)
 {
-	
+	this->_type = other_weapon;
 }
 

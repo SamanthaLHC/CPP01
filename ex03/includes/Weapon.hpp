@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:28 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 13:54:34 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 14:14:20 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ public:
 	void setType(std::string other_weapon);
 	
 private:
-	std::string _type;
+	std::string& _type;
 
 };
 
