@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:25 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/18 18:06:10 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 11:52:38 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #ifndef HUMANB_H
 #define HUMANB_H
 
+// here implem a ptr on weapon
 class HumanB
 {
 
@@ -27,7 +28,7 @@ public:
 	void attack(void);
 
 private:
-
+	Weapon* _weapon_dup;
 };
 
 #endif
