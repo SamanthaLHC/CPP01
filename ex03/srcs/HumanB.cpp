@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:35 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 17:22:50 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 17:53:00 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,5 @@ void HumanB::attack(void)
 	if (this->_weapon_dup == NULL)
 		std::cout << BRED << this->_name << " attacks with their FISTS " << RES << std::endl;
 	else
-		std::cout << BGRN << this->_name << " attacks with their " << this->_weapon_dup->getType() << RES << std::endl;
+		std::cout << BGRN << this->_name << " attacks with their " << this->_weapon_dup << RES << std::endl;
 }
