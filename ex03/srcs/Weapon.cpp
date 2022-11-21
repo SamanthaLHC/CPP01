@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:43 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 14:22:00 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/21 14:55:03 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Weapon::~Weapon(void)
 	return;
 }
 
-std::string& Weapon::getType(void) const
+const std::string& Weapon::getType(void) const
 {
 	return this->_type;
 }
