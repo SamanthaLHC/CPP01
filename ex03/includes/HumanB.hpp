@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sam <sam@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:25 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 17:53:05 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/22 12:48:18 by sam              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ public:
 	~HumanB(void);
 
 	
-	void setWeapon(Weapon inst_weapon);
+	void setWeapon(Weapon& inst_weapon);
 	
 	void attack(void);
 
