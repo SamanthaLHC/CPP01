@@ -6,29 +6,33 @@
 #    By: sam <sam@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/22 13:06:05 by sam               #+#    #+#              #
-#    Updated: 2022/11/22 16:57:58 by sam              ###   ########.fr        #
+#    Updated: 2022/11/23 11:02:24 by sam              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = a.out
 
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -g3 -std=c++98
+CXXFLAGS = -MMD -Wall -Wextra -Werror -g3 -std=c++98
+
 
 SRC = ./main.cpp
 
 OBJ = $(SRC:%.cpp=%.o)
+DEP =  ${OBJ:%.o=%.d}
 
 all: $(NAME)
 
 ${NAME}: ${OBJ}
 	${CXX} ${CXXFLAGS} ${OBJ} -o ${NAME}
-
+			
 clean:
 	rm -rf ${OBJ}
+	rm -rf ${DEP}
 
 fclean: clean
 	rm -rf ${NAME}
+	rm -f *.replace
 
 re : fclean
 	make all
@@ -45,5 +49,7 @@ wpa: re $(NAME)
 
 npa: re $(NAME)
 	./$(NAME) coucou ok 
+
+-include ${DEP}
 
 .PHONY: clean fclean re grind bin wpa npa
