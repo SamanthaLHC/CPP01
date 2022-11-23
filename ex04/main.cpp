@@ -6,7 +6,7 @@
 /*   By: sam <sam@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 13:09:48 by sam               #+#    #+#             */
-/*   Updated: 2022/11/23 11:38:37 by sam              ###   ########.fr       */
+/*   Updated: 2022/11/23 15:32:11 by sam              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ int main(int ac, char **av)
 			{
 				std::string::size_type size_of_str1;
 				size_of_str1 = std::string(av[2]).length();
-				// quelle pos donnee a erase d ou ca vient et pourquoi ca pete ?
 				std::string::size_type pos = 0;
 				while(line.find(av[2]) != std::string::npos)
 				{
