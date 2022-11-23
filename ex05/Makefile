@@ -6,11 +6,11 @@
 #    By: sam <sam@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 12:03:22 by sam               #+#    #+#              #
-#    Updated: 2022/11/23 12:05:16 by sam              ###   ########.fr        #
+#    Updated: 2022/11/23 15:18:26 by sam              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = a.out
+NAME = harl
 
 CXX = c++
 CXXFLAGS = -MMD -g3 -Wall -Wextra -Werror -std=c++98
@@ -53,5 +53,20 @@ grind: ${NAME}
 
 bin: re $(NAME)
 	./$(NAME)
+
+deb: re $(NAME)
+	./$(NAME) DEBUG
+
+inf: re $(NAME)
+	./$(NAME) INFO
+
+war: re $(NAME)
+	./$(NAME) WARNING
+
+err: re $(NAME)
+	./$(NAME) ERROR
+
+nimp: re $(NAME)
+	./$(NAME) pouet
 
 .PHONY: clean fclean re grind bin
