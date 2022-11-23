@@ -6,17 +6,16 @@
 /*   By: sam <sam@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:25 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/22 12:48:18 by sam              ###   ########.fr       */
+/*   Updated: 2022/11/23 16:46:02 by sam              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <iostream>
-#include "Weapon.hpp"
 
 #ifndef HUMANB_HPP
 #define HUMANB_HPP
 
-// here implem a ptr on weapon
+#include <iostream>
+#include "Weapon.hpp"
+
 class HumanB
 {
 

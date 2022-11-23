@@ -6,15 +6,15 @@
 /*   By: sam <sam@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 12:15:21 by sam               #+#    #+#             */
-/*   Updated: 2022/11/23 12:49:15 by sam              ###   ########.fr       */
+/*   Updated: 2022/11/23 16:46:29 by sam              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <string>
-
 #ifndef HARL_HPP
 #define HARL_HPP
+
+#include <iostream>
+#include <string>
 
 class Harl
 {

@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sam <sam@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 14:02:18 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 17:02:50 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/23 16:45:04 by sam              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-
 #ifndef ZOMBIE_HPP
 # define ZOMBIE_HPP
+
+#include <iostream>
+
 
 
 //Regular text
