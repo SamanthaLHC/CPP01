@@ -6,7 +6,7 @@
 /*   By: sam <sam@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 13:09:48 by sam               #+#    #+#             */
-/*   Updated: 2022/11/23 11:09:20 by sam              ###   ########.fr       */
+/*   Updated: 2022/11/23 11:38:37 by sam              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,14 @@ int main(int ac, char **av)
 			{
 				std::string::size_type size_of_str1;
 				size_of_str1 = std::string(av[2]).length();
-				std::string::size_type pos = line.find(av[2]);
-				line.erase(pos, size_of_str1);
-				line.insert(pos, std::string(av[3]));
+				// quelle pos donnee a erase d ou ca vient et pourquoi ca pete ?
+				std::string::size_type pos = 0;
+				while(line.find(av[2]) != std::string::npos)
+				{
+					pos = line.find(av[2]);
+					line.erase(pos, size_of_str1);
+					line.insert(pos, std::string(av[3]));
+				}
 				new_file << line;
 				if (!file_in_param.eof())
 					new_file << std::endl;
