@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+         #
+#    By: sam <sam@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/15 13:59:10 by sle-huec          #+#    #+#              #
-#    Updated: 2022/11/18 11:56:52 by sle-huec         ###   ########.fr        #
+#    Updated: 2022/11/24 10:55:34 by sam              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,3 +57,5 @@ bin: re $(NAME)
 	./$(NAME)
 
 .PHONY: clean fclean re grind bin
+
+-include ${DEPS}

@@ -6,7 +6,7 @@
 #    By: sam <sam@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 12:03:22 by sam               #+#    #+#              #
-#    Updated: 2022/11/23 15:18:26 by sam              ###   ########.fr        #
+#    Updated: 2022/11/24 10:56:06 by sam              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,3 +70,5 @@ nimp: re $(NAME)
 	./$(NAME) pouet
 
 .PHONY: clean fclean re grind bin
+
+-include ${DEPS}

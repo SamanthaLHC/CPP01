@@ -6,7 +6,7 @@
 #    By: sam <sam@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/22 13:06:05 by sam               #+#    #+#              #
-#    Updated: 2022/11/23 11:02:24 by sam              ###   ########.fr        #
+#    Updated: 2022/11/24 10:55:56 by sam              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,3 +53,5 @@ npa: re $(NAME)
 -include ${DEP}
 
 .PHONY: clean fclean re grind bin wpa npa
+
+-include ${DEPS}

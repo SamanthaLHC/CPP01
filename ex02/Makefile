@@ -28,3 +28,4 @@ bin: $(NAME)
 	./$(NAME)
 
 .PHONY: clean fclean re grind test
+
