@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sam <sam@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 12:22:39 by sam               #+#    #+#             */
-/*   Updated: 2022/11/23 15:28:29 by sam              ###   ########.fr       */
+/*   Updated: 2022/11/28 13:51:08 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,18 @@ void Harl::error(void)
 
 void Harl::complain(std::string level)
 {
+	int i = 0;
 	void (Harl::*func_list[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	std::string level_given[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	for (int i = 0; i < 4; i++)
+	while (i < 4)
 	{
 		if (level == level_given[i])
+		{
 			(this->*(func_list[i]))();
+			break;
+		}
+		i++;
 	}
+	if (i == 4)
+		std::cout << BCYN << "[Probably complaining about insignificant problems]" << RES << std::endl;
 }
