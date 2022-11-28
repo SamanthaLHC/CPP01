@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 14:01:07 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/18 11:57:46 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/28 11:12:53 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ int main()
 	barnabe.announce();
 	micheline = newZombie("MICHELINE");
 	randomChump("BRAD_PITT");
+	micheline->announce();
 	delete micheline;
 }
