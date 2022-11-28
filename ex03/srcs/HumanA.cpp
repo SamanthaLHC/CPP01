@@ -6,7 +6,7 @@
 /*   By: sle-huec <sle-huec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:32 by sle-huec          #+#    #+#             */
-/*   Updated: 2022/11/21 16:56:51 by sle-huec         ###   ########.fr       */
+/*   Updated: 2022/11/28 12:58:15 by sle-huec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ HumanA::~HumanA(void)
 	return;
 }
 
-void HumanA::attack(void)
+void HumanA::attack(void) const
 {
 	std::cout << BGRN << this->_name << " attacks with their " <<
 	 this->_weapon.getType() << RES << std::endl;
